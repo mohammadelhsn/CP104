@@ -14,18 +14,18 @@ __updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
-# Take user input
+# Get the user input
 
 food_charge = float(input("Food Charge: $"))
 sales_tax = float(input("Sales Tax in (%): "))
 tip = float(input("Tip in (%): "))
 
-# Convert percentages
+# Calculations
 
 sales_tax = sales_tax / 100
 tip = tip / 100
 
-# Define constants
+# Define Constants
 
 CALCULATED_TAX = food_charge * sales_tax
 CALCULATED_TIP = food_charge * tip

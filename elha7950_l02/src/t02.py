@@ -16,10 +16,11 @@ __updated__ = "2023-09-15"
 
 fahrenheit = int(input("Temperature (F): "))
 
-# Define constants
+# Define Constants
+
 FREEZE_DIFFERENCE = 32
 
-# Do some calculations
+# Calculations
 
 celsius = (fahrenheit - FREEZE_DIFFERENCE) * (5/9)
 

@@ -13,7 +13,7 @@ Email:   elha7950@mylaurier.ca
 __updated__ = "2023-09-15"
 -------------------------------------------------------
 """
-# Get the information from the user
+# Get the user input
 
 hourly_rate = float(input("Hourly rate of pay: "))
 hours_worked = float(input("Hours worked in the week: "))
@@ -22,6 +22,6 @@ hours_worked = float(input("Hours worked in the week: "))
 
 GROSS_PAY = hourly_rate * hours_worked
 
-# Output the result
+# Output results
 
 print(f"\nTotal pay for the week: $ {GROSS_PAY}")

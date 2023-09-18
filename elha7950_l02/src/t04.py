@@ -11,7 +11,7 @@ __updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
-# Get user input
+# Get the user input
 
 first_numerator = int(input("First numerator: "))
 first_denominator = int(input("First denominator: "))
@@ -23,6 +23,6 @@ second_denominator = int(input("Second denominator: "))
 RESULT = (first_numerator / first_denominator) * \
     (second_numerator / second_denominator)
 
-# Outputs
+# Output results
 
 print(f"\nProduct: {RESULT}")

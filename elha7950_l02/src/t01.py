@@ -11,18 +11,18 @@ Email:   elha7950@mylaurier.ca
 __updated__ = "2023-09-15"
 -------------------------------------------------------
 """
-# Get user input
+# Get the user input
 
 celsius = int(input("Temperature (C): "))
 
-# Define constants
+# Define Constants
 
 FREEZE_DIFFERENCE = 32
 
-# Do some calculations
+# Calculations
 
 fahrenheit = (9/5) * celsius + FREEZE_DIFFERENCE
 
-# Output result
+# Output results
 
 print(f"\nTemperature (F): {fahrenheit}")

@@ -20,7 +20,7 @@ __updated__ = "2023-09-15"
 large_dogs = int(input("Number of large dogs groomed: "))
 small_dogs = int(input("Number of small dogs groomed: "))
 
-# Define constants
+# Define Constants
 
 LARGE_RATE = 75
 SMALL_RATE = 50

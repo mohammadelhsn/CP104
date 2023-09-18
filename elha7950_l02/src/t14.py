@@ -26,7 +26,7 @@ __updated__ = "2023-09-15"
 
 servings = int(input("Enter servings of Mac & Cheese: "))
 
-# Set up the constants
+# Define Constants
 
 MILK = 4
 BUTTER = 8

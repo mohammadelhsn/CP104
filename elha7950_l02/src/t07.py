@@ -25,7 +25,7 @@ number_of_volunteers = int(input("Number of volunteers: "))
 FLYERS_PER = number_of_flyers // number_of_volunteers
 REMAINDER = number_of_flyers % number_of_volunteers
 
-# Output result
+# Output results
 
 print(f"\nFlyers per volunteer: {FLYERS_PER}")
 print(f"Flyers left over: {REMAINDER}")

@@ -15,11 +15,11 @@ __updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
-# Get user input
+# Get the user input
 
 projected_annual_sales = float(input("Enter projected annual sales: $"))
 
-# Define our constants
+# Define Constants
 
 PROFIT_PERCENTAGE = 0.18
 PROJECTED_PROFIT = projected_annual_sales * PROFIT_PERCENTAGE

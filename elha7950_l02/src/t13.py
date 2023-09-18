@@ -16,17 +16,21 @@ __updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
-# Get user input
+# Get the user input
 
 midterm_mark = float(input("Midterm mark (%): "))
 exam_mark = float(input("Exam mark (%): "))
 
+# Define Constants
+
 MIDTERM_WEIGHT = 0.35
 EXAM_WEIGHT = 0.65
 
-# Round to one decimal as per instructions
+# Calculations
 
 FINAL_GRADE = round((midterm_mark * MIDTERM_WEIGHT) +
                     (exam_mark * EXAM_WEIGHT), 1)
+
+# Output results
 
 print(f"\nFinal Grade (%): {FINAL_GRADE}")

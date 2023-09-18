@@ -17,11 +17,11 @@ __updated__ = "2023-09-15"
 
 miles = float(input("Length in miles: "))
 
-# Define constants
+# Define Constants
 
 CONVERSION_FACTOR = 1.61
 
-# Do calculations
+# Calculations
 
 KM = miles * CONVERSION_FACTOR
 

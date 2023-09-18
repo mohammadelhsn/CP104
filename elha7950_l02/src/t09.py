@@ -19,14 +19,14 @@ Email:   elha7950@mylaurier.ca
 __updated__ = "2023-09-15"
 -------------------------------------------------------
 """
-# Get the input
+# Get the user input
 
 diameter = float(input("Diameter of container base (cm): "))
 height = float(input("Height of container (cm): "))
 cost = float(input("Cost of material ($/cm^2): "))
 container_count = int(input("Number of containers: "))
 
-# Define your constants
+# Define Constants
 
 PI = 3.14
 RADIUS = diameter / 2
@@ -34,7 +34,7 @@ SURFACE_AREA = (2 * PI * RADIUS * height) + (PI * RADIUS**2)
 COST_FOR_ONE = SURFACE_AREA * cost
 COST_FOR_ALL = COST_FOR_ONE * container_count
 
-# Output the calculations
+# Output results
 
 print(f"\nThe total cost of one containers is $ {COST_FOR_ONE}")
 print(f"The total cost of all containers is $ {COST_FOR_ALL}")

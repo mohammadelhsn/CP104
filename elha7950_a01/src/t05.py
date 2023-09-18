@@ -35,4 +35,6 @@ TOTAL_ACCUMULATED = principal * \
     (1 + (ANNUAL_INTEREST / compounded_per_year)
      )**(compounded_per_year * years)
 
+# Output results
+
 print(f"Balance: $ {TOTAL_ACCUMULATED}")

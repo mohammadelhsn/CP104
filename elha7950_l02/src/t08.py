@@ -33,7 +33,7 @@ UPPER_LIMIT = int(input(
 BMI = weight / height**2
 BMI_PRIME = BMI / UPPER_LIMIT
 
-# Output the result
+# Output results
 
 print(f"\nBody Mass Index (kg/m^2) = {round(BMI, 2)}")
 print(f"BMI Prime = {round(BMI_PRIME, 2)}")

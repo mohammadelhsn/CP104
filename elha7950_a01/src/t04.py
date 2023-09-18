@@ -13,7 +13,7 @@ __updated__ = "2023-09-15"
 -------------------------------------------------------
 """
 
-# Get user input
+# Get the user input
 
 one_dosa_cost = float(input("Cost of 1 dosa: $"))
 number_of_dosas = int(input("Number of dosa(s): "))
@@ -22,6 +22,6 @@ number_of_dosas = int(input("Number of dosa(s): "))
 
 TOTAL_COST = one_dosa_cost * number_of_dosas
 
-# Output the result to the console
+# Output results
 
 print(f"Total cost of 3 dosas: $ {TOTAL_COST}")
