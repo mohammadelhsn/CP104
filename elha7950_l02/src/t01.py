@@ -15,7 +15,7 @@ __updated__ = "2023-09-15"
 
 celsius = int(input("Temperature (C): "))
 
-# Define constants 
+# Define constants
 
 FREEZE_DIFFERENCE = 32
 
