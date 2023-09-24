@@ -1,0 +1,144 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Mohammad El-Hassan 
+ID:      169067950
+Email:   elha7950@mylaurier.ca
+Version: 2023-09-23
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+'I'm a Little Astronaut' by Jean Warren
+
+I'm a little astronaut
+    Flying to the moon.
+        My rocket is ready,
+        We blast off soon.
+I climb aboard
+    And close the hatch.
+        5-4-3-2-1, off we blast!
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+'Twinkle Twinkle Little Star' by Jane Taylor
+
+Twinkle, twinkle, little star,
+    How I wonder what you are!
+        Up above the world so high,
+        Like a diamond in the sky.
+Twinkle, twinkle, little star,
+    How I wonder what you are!
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+Selected quotes from Mark Twain:
+
+"Do the right thing. It will gratify some people and astonish the rest."
+"All generalizations are false, including this one."
+"It is better to keep your mouth closed and let people think you are a fool
+than to open it and remove all doubt."
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+Enter number: 500
+Enter percent: 10.5
+
+A 10.5 discount on 500.0 is 52.5
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+Enter minimum: 38
+Enter maximum: 452
+
+The difference between 452 and 38 is 414
+-------------------------------------------------------
+t06
+-------------------------------------------------------
+Enter cost: $4.67
+Enter quantity: 5
+
+Given a cost of $4.67 and a quantity of 5 the total is $23.35
+-------------------------------------------------------
+t07
+-------------------------------------------------------
+Enter cost of breakfast: $6.75
+Enter cost of lunch: $19.34
+Enter cost of supper: $112.81
+
+Meal         Cost
+Breakfast    $  6.75
+Lunch        $ 19.34
+Supper       $112.81
+Total        $138.90
+-------------------------------------------------------
+t08
+-------------------------------------------------------
+Enter amount of dirt (m^3): 55.5
+Enter amount of gravel (m^3): 30.6
+Enter amount of sand (m^3): 112.8
+
+Material   Cubic Metres
+Dirt        55.5
+Gravel      30.6
+Sand       112.8
+Total      198.9
+-------------------------------------------------------
+t09
+-------------------------------------------------------
+Enter sweatband cost: $4.95
+Enter pants cost: $23.27
+Enter jacket cost: $103.21
+
+Clothes      Cost
+Sweatband    $  4.95
+Pants        $ 23.27
+Jacket       $103.21
+Total        $131.43
+-------------------------------------------------------
+t10
+-------------------------------------------------------
+Enter a year: 1990 
+Enter a month: 4
+Enter a day: 8
+
+The date: 1990/04/08
+
+Enter a year: 1990
+Enter a month: 12
+Enter a day: 23
+
+The date: 1990/12/23
+-------------------------------------------------------
+t11
+-------------------------------------------------------
+left----------------
+-------middle-------
+---------------right
+-------------------------------------------------------
+t12
+-------------------------------------------------------
+Values
+First:  ___100
+Second: ____34
+Third:  ___933
+Total:  __1067
+-------------------------------------------------------
+t13
+-------------------------------------------------------
+Enter number of seconds: 3681
+There are 1 hour(s), 1 minute(s), and 21 second(s) in 3681 second(s)
+-------------------------------------------------------
+t14
+-------------------------------------------------------
+Enter number of minute(s): 3369
+There are 2 day(s), 8 hour(s), and 9 minute(s) in 3369 minute(s)
+-------------------------------------------------------
+t15
+-------------------------------------------------------
+654321
+654321.000000
+654.320000
+Hello World

@@ -23,7 +23,10 @@ Believe it or not, that's pretty much all there is to it.
 -------------------------------------------------------
 t02
 -------------------------------------------------------
+What is your age? 60
+What is your favourite band? The Beatles
 
+I am 60 years old and The Beatles is my favourite band.
 -------------------------------------------------------
 t03
 -------------------------------------------------------

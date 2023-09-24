@@ -20,4 +20,5 @@ fav_band = input("What is your favourite band? ")
 
 # Output the results
 
+print()
 print(f"I am {age} years old and {fav_band} is my favourite band.")
