@@ -16,7 +16,7 @@ Description:
 Author:  Mohammad El-Hassan
 ID:      169067950
 Email:   elha7950@mylaurier.ca
-__updated__ = "2023-09-15"
+__updated__ = "2023-09-29"
 -------------------------------------------------------
 """
 
@@ -37,4 +37,5 @@ TOTAL_ACCUMULATED = principal * \
 
 # Output results
 
+print()
 print(f"Balance: $ {TOTAL_ACCUMULATED}")

@@ -9,7 +9,7 @@ Description:
 Author:  Mohammad El-Hassan
 ID:      169067950
 Email:   elha7950@mylaurier.ca
-__updated__ = "2023-09-15"
+__updated__ = "2023-09-29"
 -------------------------------------------------------
 """
 
@@ -24,4 +24,5 @@ TOTAL_COST = one_dosa_cost * number_of_dosas
 
 # Output results
 
+print()
 print(f"Total cost of 3 dosas: $ {TOTAL_COST}")
