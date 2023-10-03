@@ -25,4 +25,4 @@ TOTAL_COST = one_dosa_cost * number_of_dosas
 # Output results
 
 print()
-print(f"Total cost of 3 dosas: $ {TOTAL_COST}")
+print(f"Total cost of {number_of_dosas} dosas: $ {TOTAL_COST}")
