@@ -5,7 +5,7 @@
 Author:  Mohammad El-Hassan
 ID:      169067950
 Email:   elha7950@mylaurier.ca
-__updated__ = "2023-09-30"
+__updated__ = "2023-10-07"
 -------------------------------------------------------
 """
 
@@ -15,8 +15,8 @@ foundation_length = float(input("Foundation length (m): "))
 foundation_width = float(input("Foundation width (m): "))
 foundation_height = float(input("Foundation height (m): "))
 wall_height = float(input("Wall height (m): "))
-cost_of_concrete = int(input("Cost of concrete ($/m^3): "))
-cost_of_bricks = int(input("Cost of bricks ($/m^2): "))
+cost_of_concrete = float(input("Cost of concrete ($/m^3): "))
+cost_of_bricks = float(input("Cost of bricks ($/m^2): "))
 
 # Calculations, Define Constants
 
