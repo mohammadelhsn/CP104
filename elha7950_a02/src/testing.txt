@@ -11,20 +11,61 @@ Version: 2023-09-11
 -------------------------------------------------------
 t01
 -------------------------------------------------------
+Enter the total sales: $32000
+Projected Tax Report
+--------------------------
+Total sales:   $ 32000
+Annual tax:    % 18.5
+--------------------------
+Tax:           $  5920.0
 
+Enter the total sales: $100000
+Projected Tax Report
+--------------------------
+Total sales:   $ 100000
+Annual tax:    % 18.5
+--------------------------
+Tax:           $  18500.0
 -------------------------------------------------------
 t02
 -------------------------------------------------------
+Enter a positive digit number: 25
 
+The difference of the digits of 25 is -3
+
+Enter a positive digit number: 28
+
+The difference of the digits of 28 is -6
 -------------------------------------------------------
 t03
 -------------------------------------------------------
+Enter a date in the format YYYYMMDD: 19621025
 
+The reformatted date: 1962/10/25
+
+Enter a date in the format YYYYMMDD: 20231007
+
+The reformatted date: 2023/10/7
 -------------------------------------------------------
 t04
 -------------------------------------------------------
+Number of flyers: 1400
+Number of delivery people: 12
 
+Flyers per delivery person: 116
+Flyers left over: 8
 -------------------------------------------------------
 t05
 -------------------------------------------------------
+Foundation length (m): 4.0
+Foundation width (m): 2.0
+Foundation height (m): 0.6
+Wall height (m): 2.5
+Cost of concrete ($/m^3): 125
+Cost of bricks ($/m^2): 94 
 
+Concrete needed for foundation (m^3): 4.8
+Cost of concrete: $600.0
+Bricks needed for walls (m^2): 30.0
+Cost of bricks: $2820.0
+Total cost: $3420.0
