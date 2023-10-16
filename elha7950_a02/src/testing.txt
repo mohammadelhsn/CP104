@@ -43,9 +43,9 @@ Enter a date in the format YYYYMMDD: 19621025
 
 The reformatted date: 1962/10/25
 
-Enter a date in the format YYYYMMDD: 20231007
+Enter a date in the format YYYYMMDD: 20230907
 
-The reformatted date: 2023/10/7
+The reformatted date: 2023/09/07
 -------------------------------------------------------
 t04
 -------------------------------------------------------
@@ -62,10 +62,10 @@ Foundation width (m): 2.0
 Foundation height (m): 0.6
 Wall height (m): 2.5
 Cost of concrete ($/m^3): 125
-Cost of bricks ($/m^2): 94 
+Cost of bricks ($/m^2): 94
 
-Concrete needed for foundation (m^3): 4.8
-Cost of concrete: $600.0
-Bricks needed for walls (m^2): 30.0
-Cost of bricks: $2820.0
-Total cost: $3420.0
+Concrete needed for foundation (m^3): 4.80
+Cost of concrete: $600.00
+Bricks needed for walls (m^2): 30.00
+Cost of bricks: $2,820.00
+Total cost: $3,420.00

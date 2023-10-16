@@ -31,8 +31,8 @@ TOTAL_COST = TOTAL_CONCRETE_COST + TOTAL_BRICKS_COST
 # Output results
 
 print()
-print(f"Concrete needed for foundation (m^3): {FOUNDATION_CONCRETE}")
-print(f"Cost of concrete: ${TOTAL_CONCRETE_COST}")
-print(f"Bricks needed for walls (m^2): {BRICKS_NEEDED}")
-print(f"Cost of bricks: ${TOTAL_BRICKS_COST}")
-print(f"Total cost: ${TOTAL_COST}")
+print(f"Concrete needed for foundation (m^3): {FOUNDATION_CONCRETE:.2f}")
+print(f"Cost of concrete: ${TOTAL_CONCRETE_COST:,.2f}")
+print(f"Bricks needed for walls (m^2): {BRICKS_NEEDED:.2f}")
+print(f"Cost of bricks: ${TOTAL_BRICKS_COST:,.2f}")
+print(f"Total cost: ${TOTAL_COST:,.2f}")

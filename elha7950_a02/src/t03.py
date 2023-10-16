@@ -10,7 +10,7 @@ Description:
 Author:  Mohammad El-Hassan
 ID:      169067950
 Email:   elha7950@mylaurier.ca
-__updated__ = "2023-09-30"
+__updated__ = "2023-10-07"
 -------------------------------------------------------
 """
 
@@ -27,4 +27,4 @@ MONTH = (date % (((YEAR * 10000) + DAY))) / 100
 # Output results
 
 print()
-print(f"The reformatted date: {YEAR}/{int(MONTH)}/{DAY}")
+print(f"The reformatted date: {YEAR}/{int(MONTH):02d}/{DAY:02d}")
