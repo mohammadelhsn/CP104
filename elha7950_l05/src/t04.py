@@ -10,18 +10,9 @@ __updated__ = "2023-10-16"
 """
 # Imports
 
+from functions import closest
+
 # Constants
 
-
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = closest(0.0, 5.0, 10.0)
+print(result)

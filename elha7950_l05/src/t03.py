@@ -10,18 +10,10 @@ __updated__ = "2023-10-16"
 """
 # Imports
 
+from functions import gym_cost
+
 # Constants
 
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+results = gym_cost(50, 2)
+print(results)

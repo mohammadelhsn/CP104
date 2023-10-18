@@ -10,18 +10,9 @@ __updated__ = "2023-10-16"
 """
 # Imports
 
+from functions import magic_date
+
 # Constants
 
-
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = magic_date(6, 10, 60)
+print(result)

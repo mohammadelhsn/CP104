@@ -10,18 +10,9 @@ __updated__ = "2023-10-16"
 """
 # Imports
 
+from functions import is_leap
+
 # Constants
 
-
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = is_leap(1999)
+print(result)
