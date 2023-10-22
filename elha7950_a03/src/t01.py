@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Assignment 3, Task 1
+
+Description: 
+    Converts square footage to acres.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +13,12 @@ __updated__ = "2023-10-16"
 """
 # Imports
 
-# Constants
+from functions import footage_to_acres
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = footage_to_acres(100000.0)
+
+# Output results
+
+print(result)

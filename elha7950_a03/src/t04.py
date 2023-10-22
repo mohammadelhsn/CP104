@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Assignment 3, Task 4
+
+Description:
+    Calculates and returns fraction values.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +13,12 @@ __updated__ = "2023-10-16"
 """
 # Imports
 
-# Constants
+from functions import multiply_fractions
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = multiply_fractions(1, 2, 3, 4)
+
+# Output results
+
+print(result)

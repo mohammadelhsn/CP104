@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Assignment 3, Task 3
+
+Description:
+    Extracts the year, month, and day from a date number in the format YYYYMMDD.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +13,12 @@ __updated__ = "2023-10-16"
 """
 # Imports
 
-# Constants
+from functions import extract_date
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = extract_date(19621025)
+
+# Output results
+
+print(result)

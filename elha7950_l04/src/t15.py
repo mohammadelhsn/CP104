@@ -15,5 +15,9 @@ __updated__ = "2023-09-30"
 
 from functions import time_split
 
+# Call the function 
 results = time_split(956000)
+
+# Output results 
+
 print(results)
