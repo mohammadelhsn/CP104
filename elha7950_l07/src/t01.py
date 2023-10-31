@@ -10,18 +10,8 @@ __updated__ = "2023-10-31"
 """
 # Imports
 
+from functions import hi_lo_game
+
 # Constants
 
-
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+hi_lo_game(100)
