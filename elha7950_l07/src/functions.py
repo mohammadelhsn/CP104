@@ -100,4 +100,16 @@ def population_growth(target, current, rate):
     return years
 
 
-print(population_growth(10000, 1000, 10))
+def sum_squares(target):
+    """
+    -------------------------------------------------------
+    Determines the sum of squares closest to, and greater than or
+    equal to, a target value.
+    Use: final = sum_squares(target)
+    -------------------------------------------------------
+    Parameters:
+        target - target value (int >= 0)
+    Returns:
+        final - the final sum of squares >= target (int)
+    -------------------------------------------------------
+    """
