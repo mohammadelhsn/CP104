@@ -1,6 +1,10 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 7, Task 2
+
+Description: 
+    Determines the nearest power of 2 greater than or equal to
+    a given target.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +14,12 @@ __updated__ = "2023-10-31"
 """
 # Imports
 
-# Constants
+from functions import power_of_two
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = power_of_two(3)
+
+# Output results
+
+print(result)

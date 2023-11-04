@@ -1,0 +1,109 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Mohammad El-Hassan 
+ID:      169067950
+Email:   elha7950@mylaurier.ca
+Version: 2023-09-23
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+Guess: 37
+Too high, try again!
+Guess: 22
+Too high, try again!
+Guess: 12
+Too high, try again!
+Guess: 6
+Too high, try again!
+Guess: 2
+Congratulations! You got it!
+You made 5 guesses.
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+4
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+25
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+30
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+First positive value 4.2
+Next positive value: 3.5
+Next positive value: 0
+Next positive value: 6.1
+Next positive value: -1
+(0.0, 6.1, 13.8, 3.45)
+-------------------------------------------------------
+t06
+-------------------------------------------------------
+First value: 3.2
+Next value: -6.8
+Next value: 23
+Next value: -5.4
+Next value: 0
+Next value: -999
+(2, 1, 2)
+-------------------------------------------------------
+t07
+-------------------------------------------------------
+For day 1
+
+How much was breakfast? $7.95
+How much was lunch? $15.32
+How much was supper? $42.56
+Your total for the day was $65.83
+Were you away another day (Y/N)? y
+For day 2
+
+How much was breakfast? $5.55
+How much was lunch? $12.39
+How much was supper? $36.23
+Your total for the day was $54.17
+Were you away another day (Y/N)? N
+(13.5, 27.71, 78.79, 120.0)
+-------------------------------------------------------
+t08
+-------------------------------------------------------
+Enter an expense (0 to quit): $150
+Enter an expense (0 to quit): $23
+Enter an expense (0 to quit): $12
+Enter an expense (0 to quit): $15
+Enter an expense (0 to quit): $37.5
+Enter an expense (0 to quit): $65
+Enter an expense (0 to quit): $0 
+(302.5, -102.5, 'Deficit')
+-------------------------------------------------------
+t09
+-------------------------------------------------------
+Enter a value between 0 and 100-110
+Value entered is too low.
+Enter a value between 0 and 100110
+Value entered is too high!
+Enter a value between 0 and 10075
+
+75
+-------------------------------------------------------
+t10
+-------------------------------------------------------
+Employee ID: 123
+Hourly wage rate: 45
+Hours worked: 46
+Net payment for employee 123 is $2,125.07
+
+Employee ID: 124
+Hourly wage rate: 30
+Hours worked: 46
+Net payment for employee 124 is $1,416.71
+
+Employee ID: 0
+(3541.78, 1770.89)

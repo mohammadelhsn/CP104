@@ -1,6 +1,10 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 7, Task 9
+
+Description: 
+    Asks a user for an integer value between low and high, and
+    continues asking until an acceptable value is input.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +14,12 @@ __updated__ = "2023-10-31"
 """
 # Imports
 
-# Constants
+from functions import get_int
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = get_int(0, 100)
+
+# Output results
+
+print(result)

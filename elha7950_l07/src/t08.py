@@ -1,6 +1,11 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 7, Task 8
+
+Description: 
+    Asks a user for a series of expenses in a month. Calculate the
+    total expenses and determines whether the user is in "Surplus",
+    "Deficit", or "Balanced" status.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +15,12 @@ __updated__ = "2023-10-31"
 """
 # Imports
 
-# Constants
+from functions import budget
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = budget(200)
+
+# Output results
+
+print(result)

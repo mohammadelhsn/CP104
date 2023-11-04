@@ -1,6 +1,10 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 7, Task 4
+
+Description: 
+    Determines the sum of squares closest to, and greater than or
+    equal to, a target value.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +14,12 @@ __updated__ = "2023-10-31"
 """
 # Imports
 
-# Constants
+from functions import sum_squares
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = sum_squares(26)
+
+# Output results
+
+print(result)

@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 7, Task 1
+
+Description: 
+    Plays a random higher-lower guessing game.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -12,6 +15,6 @@ __updated__ = "2023-10-31"
 
 from functions import hi_lo_game
 
-# Constants
+# Call the function, Output results
 
 hi_lo_game(100)
