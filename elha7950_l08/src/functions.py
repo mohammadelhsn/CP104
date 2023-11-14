@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 8, Functions
+
+Description: 
+    Functions for tasks 1-15
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -37,7 +40,12 @@ def get_weekday_name(d):
     -------------------------------------------------------
     """
 
+    # Get the name
+
     name = WEEKDAYS[d-1]
+
+    # Return the value
+
     return name
 
 
@@ -53,8 +61,12 @@ def get_month_name(m):
         name - matching month, 1 = "January", 12 = "December" (str)
     -------------------------------------------------------
     """
+    # Get the name
 
     name = MONTHS[m-1]
+
+    # Return the value
+
     return name
 
 
@@ -70,7 +82,12 @@ def get_digit_name(n):
         name - matching digit, 0 = "zero", 9 = "nine" (str)
     -------------------------------------------------------
     """
+    # Get the name
+
     name = DIGITS[n]
+
+    # Return the value
+
     return name
 
 
@@ -89,11 +106,23 @@ def generate_integer_list(n, low, high):
         values - a list of random integers (list of int)
     -------------------------------------------------------
     """
+    # Define the list
+
     values = []
 
+    # Loop
+
     for i in range(n):
+
+        # Generate a random number
+
         num = randint(low, high)
+
+        # Add the random number to the values list
+
         values.append(num)
+
+    # Return the list
 
     return values
 
@@ -113,16 +142,30 @@ def get_lotto_numbers(n, low, high):
         numbers - a list of unique random lottery numbers (list of int)
     -------------------------------------------------------
     """
+    # Define the numbers list
+
     numbers = []
 
+    # Basically a for loop
+
     while (len(numbers) != n):
+
+        # Generate the random number
+
         num = randint(low, high)
+
+        # Check for duplicates, if it exists continue, otherwise add it to the list
+
         if (num in numbers):
             continue
         else:
             numbers.append(num)
 
+    # Sort them from smallest to highest
+
     numbers.sort()
+
+    # Return the list
 
     return numbers
 
@@ -143,17 +186,29 @@ def list_stats(values: list):
         average - the average numbers in values (float)
     -------------------------------------------------------
     """
+    # By sorting it, the largest is always going to be at the end
+    # And the smallest is going to be the first
+
     values.sort()
+
+    # Define variables
+
     largest = values[-1]
     smallest = values[0]
     total = 0
 
+    # Get the total
+
     for num in values:
         total += num
 
+    # Calculate average
+
     average = total / len(values)
 
-    return smallest, largest, total, average
+    # Return values
+
+    return (smallest, largest, total, average)
 
 
 def list_categorize(values):
@@ -172,6 +227,9 @@ def list_categorize(values):
         odds - the number of odd values (int)
     -------------------------------------------------------
     """
+
+    # Define variables
+
     negatives = 0
     positives = 0
     zeroes = 0
@@ -179,11 +237,15 @@ def list_categorize(values):
     odds = 0
 
     for val in values:
+        # If the value is zero, add to zeroes and evens
+
         if (val == 0):
             zeroes += 1
-
             evens += 1
         elif (val > 0):
+
+            # If value is greater than zero, add to positive then check if it's even or odd.
+
             positives += 1
 
             if ((val % 2) == 0):
@@ -191,13 +253,18 @@ def list_categorize(values):
             else:
                 odds += 1
         else:
+            # Else the value is guaranteed to be negative, therefore add to negative and check for even / odd.
+
             negatives += 1
 
             if ((val % 2) == 0):
                 evens += 1
             else:
                 odds += 1
-    return negatives, positives, zeroes, evens, odds
+
+    # Return all values
+
+    return (negatives, positives, zeroes, evens, odds)
 
 
 def linear_search(values, value):
@@ -216,7 +283,12 @@ def linear_search(values, value):
     """
     index = -1
 
+    # While loop requirement???
+
     while True:
+
+        # Checks for only 1 value
+
         for i in range(len(values)):
             if (values[i] == value):
                 index = i
@@ -241,12 +313,17 @@ def many_search(values: list, value):
             [] if not found (list of int).
     -------------------------------------------------------
     """
+    # Define list of indexes
 
     indexes = []
+
+    # Add all occurrences to the indexes list
 
     for i in range(len(values)):
         if (values[i] == value):
             indexes.append(i)
+
+    # Return list
 
     return indexes
 
@@ -268,15 +345,23 @@ def min_search(values: list):
     """
     indexes = []
 
+    # Copy the list so as to not modify the original and mess up the indexes.
+
     values2: list = values.copy()
+
+    # Sorts from smallest to highest, so index at 0 is always going to be the smallest number.
 
     values2.sort()
 
     minimum = values2[0]
 
+    # Check all numbers that are the same as the minimum
+
     for i in range(len(values)):
         if (values[i] == minimum):
             indexes.append(i)
+
+    # Return list
 
     return indexes
 
@@ -295,10 +380,16 @@ def dot_product(source1, source2):
         product - source1 • source2 (float)
     -------------------------------------------------------
     """
+    # Define product total
+
     product = 0
+
+    # Add the product to the total
 
     for index in range(len(source1)):
         product += ((source1[index]) * (source2[index]))
+
+    # Return the total (dot product)
 
     return product
 
@@ -317,11 +408,16 @@ def list_sums(source1, source2):
         target - sums of elements of source1 and source2 (list of float)
     -------------------------------------------------------
     """
+    # Define list
 
     target = []
 
+    # Append the sum of both values at the same index
+
     for index in range(len(source1)):
         target.append((source1[index])+(source2[index]))
+
+    # Return the list
 
     return target
 
@@ -342,18 +438,27 @@ def union(source1, source2):
     -------------------------------------------------------
     """
 
+    # Define the list
+
     target = []
+
+    # If the element is not in target append it, else continue
 
     for i in range((len(source1))):
         if (source1[i] not in target):
             target.append(source1[i])
         else:
             continue
+
+    # If the element is not in target append it, else continue
+
     for i in range((len(source2))):
         if (source2[i] not in target):
             target.append(source2[i])
         else:
             continue
+
+    # Return values
 
     return target
 
@@ -373,14 +478,19 @@ def intersection(source1, source2: list):
         target - the intersection of source1 and source2 (list of *)
     -------------------------------------------------------
     """
+    # Define the list
 
     target = []
+
+    # Add things to the list that are only found once in the other list and not already in the list
 
     for el in source1:
         if ((el not in target) and (source2.count(el) == 1)):
             target.append(el)
         else:
             continue
+
+    # Return list
 
     return target
 
@@ -401,7 +511,11 @@ def symmetric_difference(source1, source2):
         target - the symmetric difference of source1 and source2 (list of *)
     -------------------------------------------------------
     """
+    # Define the list
+
     target = []
+
+    # Check if the element is not in source2 and append them.
 
     for el in source1:
         if (el not in source2):
@@ -409,10 +523,14 @@ def symmetric_difference(source1, source2):
         else:
             continue
 
+    # Check if the element is not in source1 and append them as well.
+
     for el in source2:
         if (el not in source1):
             target.append(el)
         else:
             continue
+
+    # Return values.
 
     return target

@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Assignment 6, Task 3
+
+Description: 
+    Prints a table of monthly interest and payments on a loan.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +13,8 @@ __updated__ = "2023-11-10"
 """
 # Imports
 
-# Constants
+from functions import interest_table
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = interest_table(750, 8.5, 200)

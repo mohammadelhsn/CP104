@@ -1,6 +1,10 @@
 """
 -------------------------------------------------------
-[program description]
+Assignment 6, Task 1
+
+Description: 
+    Returns wins for purple and gold. Type enter if you 
+    wish to quit.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +14,12 @@ __updated__ = "2023-11-10"
 """
 # Imports
 
-# Constants
+from functions import total_wins
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = total_wins()
+
+# Output results
+
+print(result)

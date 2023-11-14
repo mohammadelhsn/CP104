@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Assignment 6, Task 2
+
+Description: 
+    Determines if number is a prime number.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +13,12 @@ __updated__ = "2023-11-10"
 """
 # Imports
 
-# Constants
+from functions import detect_prime
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = detect_prime(131)
+
+# Output results
+
+print(result)
