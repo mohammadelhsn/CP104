@@ -1,6 +1,14 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 9, Task 15
+
+Description: 
+    Treats expr as a math expression and evaluates it.
+    expr must have the following format:
+        operand1 operator operand2
+    operators are: +, -, *, /, %
+    operands are one-digit integer numbers
+    Return None if second operand is zero for division.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +18,12 @@ __updated__ = "2023-11-15"
 """
 # Imports
 
-# Constants
+from functions import calculate
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = calculate('5 + 4')
+
+# Output results
+
+print(result)

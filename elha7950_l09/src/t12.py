@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 9, Task 12
+
+Description: 
+    Replaces all the commas with a period in s.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +13,12 @@ __updated__ = "2023-11-15"
 """
 # Imports
 
-# Constants
+from functions import comma_period_replace
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = comma_period_replace('Number 1, Number 2, Number 3,')
+
+# Output results
+
+print(result)

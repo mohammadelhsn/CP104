@@ -1,6 +1,10 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 9, Task 6
+
+Description: 
+    Checks whether the given string is palindrome or not. A palindrome is
+    a string the reads the same forwards as backwards. Case is ignored.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +14,12 @@ __updated__ = "2023-11-14"
 """
 # Imports
 
-# Constants
+from functions import is_palindrome
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = is_palindrome('racecar')
+
+# Output results
+
+print(result)

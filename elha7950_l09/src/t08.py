@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 9, Task 8
+
+Description: 
+    Counts the number of digits in a string.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +13,12 @@ __updated__ = "2023-11-15"
 """
 # Imports
 
-# Constants
+from functions import digit_count
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = digit_count('I know 1 thing - there are 2 kinds of people.')
+
+# Output result
+
+print(result)

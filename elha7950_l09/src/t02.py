@@ -1,6 +1,10 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 9, Task 2
+
+Description: 
+    Returns whether a url represents a business, a non-profit, or another
+    type of organization.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +14,12 @@ __updated__ = "2023-11-14"
 """
 # Imports
 
-# Constants
+from functions import url_categorize
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = url_categorize('www.yahoo.com')
+
+# Output result
+
+print(result)

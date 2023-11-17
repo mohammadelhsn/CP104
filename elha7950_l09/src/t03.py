@@ -1,6 +1,12 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 9, Task 3
+
+Description:
+    Parses a given product code. A product code has three parts:
+        The first three letters describe the product category
+        The next four digits are the product ID
+        The remaining characters describe the product's qualifiers
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +16,12 @@ __updated__ = "2023-11-14"
 """
 # Imports
 
-# Constants
+from functions import parse_code
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = parse_code('ATV3482S14')
+
+# Output results
+
+print(result)

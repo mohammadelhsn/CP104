@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 9, Task 1
+
+Description: 
+    Determines if a chemical formula is a hydroxide.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +13,12 @@ __updated__ = "2023-11-14"
 """
 # Imports
 
-# Constants
+from functions import is_hydroxide
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = is_hydroxide("NaOH")
+
+# Output results
+
+print(result)

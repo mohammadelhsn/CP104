@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 9, Task 13
+
+Description: 
+    Extracts and calculates the total of all digits in string.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +13,13 @@ __updated__ = "2023-11-15"
 """
 # Imports
 
-# Constants
+from functions import total_digits
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = total_digits(
+    'They ate 3 hotdogs, 4 hamburgs, and 12 pieces of pizza.')
+
+# Output results
+
+print(result)

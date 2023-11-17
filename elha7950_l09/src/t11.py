@@ -1,6 +1,10 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 9, Task 11
+
+Description: 
+    Disemvowels a string. Returns a copy of s with all the vowels
+    removed. Y is not treated as a vowel. Preserves case.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +14,12 @@ __updated__ = "2023-11-15"
 """
 # Imports
 
-# Constants
+from functions import dsmvwl
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = dsmvwl('I think your book is an utter piece of garbage.')
+
+# Output result
+
+print(result)

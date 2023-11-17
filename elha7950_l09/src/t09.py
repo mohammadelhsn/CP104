@@ -1,6 +1,10 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 9, Task 9
+
+Description:
+    Counts the number of special characters in s.
+    The special characters are: "#", "@", "$", "%", "&", "!".
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +14,12 @@ __updated__ = "2023-11-15"
 """
 # Imports
 
-# Constants
+from functions import count_special_chars
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = count_special_chars("It is a beautiful day! We spent $40 today.")
+
+# Output result
+
+print(result)
