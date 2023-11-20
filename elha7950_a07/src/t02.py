@@ -10,18 +10,12 @@ __updated__ = "2023-11-15"
 """
 # Imports
 
-# Constants
+from functions import list_positives
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = list_positives()
+
+# Output results
+
+print(result)

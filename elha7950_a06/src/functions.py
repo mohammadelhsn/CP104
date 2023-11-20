@@ -162,7 +162,7 @@ def count_of_digits(number):
     """
     digits = 0
     if (number == 0):
-        digits = 0
+        digits = 1
 
     num = abs(number)
     while num > 0:

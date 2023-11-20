@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Assignment 7, Task 5
+
+Description: 
+    Determines whether a list is sorted.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +13,12 @@ __updated__ = "2023-11-15"
 """
 # Imports
 
-# Constants
+from functions import verify_sorted
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = verify_sorted([23, 41, 99])
+
+# Output results 
+
+print(result)

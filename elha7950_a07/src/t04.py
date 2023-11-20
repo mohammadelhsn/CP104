@@ -1,6 +1,12 @@
 """
 -------------------------------------------------------
-[program description]
+Assignment 7, Task 4
+
+Description: 
+    Alters the contents of minuend so that it does not contain
+    any values in subtrahend.
+    i.e. the values in the first list that appear in the second list
+    are removed from the first list.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +16,12 @@ __updated__ = "2023-11-15"
 """
 # Imports
 
-# Constants
+from functions import list_subtract
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = list_subtract([5, 5, 4, 5], [5])
+
+# Output results
+
+print(result)
