@@ -201,6 +201,9 @@ def customer_first(fh):
     -------------------------------------------------------
     """
 
+    # Read each individual line
+    # Define result variable and lowest variable to keep track of the lowest date.
+
     line = fh.readline().strip()
     lowest = "999999"
     result = []
@@ -474,7 +477,7 @@ def file_copy_n(fh_1, fh_2, n):
     # While True
 
     while True:
-        # If the length of the list 
+        # If the length of the list
 
         if (len(data) > number):
             for i in range(number):
