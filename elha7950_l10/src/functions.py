@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
-[program description]
+Lab 10, Tasks 1-14
+
+Description: 
+    Functions for all the tasks.
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -460,11 +463,19 @@ def file_copy_n(fh_1, fh_2, n):
         None
     ------------------------------------------------------
     """
+    # Read all the lines
+
     data = fh_1.readlines()
+
+    # Convert the number into an integer incase?
 
     number = int(n)
 
+    # While True
+
     while True:
+        # If the length of the list 
+
         if (len(data) > number):
             for i in range(number):
                 fh_2.write(data[i])
