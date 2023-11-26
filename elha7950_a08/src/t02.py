@@ -10,18 +10,27 @@ __updated__ = "2023-11-20"
 """
 # Imports
 
-# Constants
+from functions import pluralize
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+# Output result
+
+test_cases = [
+    ("cat", "cats"),
+    ("dog", "dogs"),
+    ("city", "cities"),
+    ("baby", "babies"),
+    ("toy", "toys"),
+    ("bus", "buses"),
+    ("dish", "dishes"),
+    ("fox", "foxes"),
+    ("church", "churches"),
+    ("piano", "pianos"),
+]
+
+for input_str, expected_output in test_cases:
+    result = pluralize(input_str)
+    print(
+        f"Input: {input_str}, Expected Output: {expected_output}, Actual Output: {result}")
+    assert result == expected_output, f"Test case failed: {input_str}"

@@ -1,6 +1,13 @@
 """
 -------------------------------------------------------
-[program description]
+Assignment 8, Task 1
+
+Description: 
+    Pluralizes a string according to the rules:
+        - if string ends with 's', 'sh', or 'ch', add 'es'
+        - if string ends with 'y' but not 'ay' or 'oy', replace
+            the 'y' with 'ies'
+        - otherwise add 's'
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -10,18 +17,12 @@ __updated__ = "2023-11-20"
 """
 # Imports
 
-# Constants
+from functions import add_spaces
 
+# Call the function
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+result = add_spaces('StopAndSmellTheRoses.')
+
+# Output the result
+
+print(result)

@@ -10,18 +10,9 @@ __updated__ = "2023-11-20"
 """
 # Imports
 
-# Constants
+from functions import has_word_chain
 
+# Test Case 1: Valid word chain
+result = has_word_chain(["apple", "elephant", "turtle", "elephant"])
 
-def func():
-    """
-    -------------------------------------------------------
-    description
-    Use: 
-    -------------------------------------------------------
-    Parameters:
-        name - description (type)
-    Returns:
-        name - description (type)
-    ------------------------------------------------------
-    """
+print(result)

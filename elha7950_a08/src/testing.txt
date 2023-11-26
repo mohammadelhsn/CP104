@@ -1,0 +1,51 @@
+"""
+-------------------------------------------------------
+Lab/Assignment  Testing
+-------------------------------------------------------
+Author:  Mohammad El-Hassan 
+ID:      169067950
+Email:   elha7950@mylaurier.ca
+Version: 2023-09-11
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+-------------------------------------------------------
+Input: ThisIsATest, Output: This is a test
+Input: AnotherExample, Output: Another example
+Input: SentenceWithNumbers123, Output: Sentence with numbers123
+Input: OneWordOnly, Output: One word only
+Input: TestingTheFunction, Output: Testing the function
+-------------------------------------------------------
+t02
+-------------------------------------------------------
+Input: cat, Expected Output: cats, Actual Output: cats
+Input: dog, Expected Output: dogs, Actual Output: dogs
+Input: city, Expected Output: cities, Actual Output: cities
+Input: baby, Expected Output: babies, Actual Output: babies
+Input: toy, Expected Output: toys, Actual Output: toys
+Input: bus, Expected Output: buses, Actual Output: buses
+Input: dish, Expected Output: dishes, Actual Output: dishes
+Input: fox, Expected Output: foxes, Actual Output: foxes
+Input: church, Expected Output: churches, Actual Output: churches
+Input: piano, Expected Output: pianos, Actual Output: pianos
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+Test Case 1 - Expected: 'apple', Actual: 'apple'
+Test Case 2 - Expected: '', Actual: ''
+Test Case 3 - Expected: '', Actual: ''
+Test Case 4 - Expected: '', Actual: ''
+Test Case 5 - Expected: '', Actual: ''
+Test Case 6 - Expected: 'bC', Actual: 'C'
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+Test Case 1 - Expected: True, Actual: True
+Test Case 2 - Expected: False, Actual: False
+Test Case 3 - Expected: False, Actual: False
+Test Case 5 - Expected: False, Actual: False
+-------------------------------------------------------
+t05
+-------------------------------------------------------
+True
