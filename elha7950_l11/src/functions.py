@@ -16,6 +16,7 @@ from string import ascii_lowercase
 # Constants
 
 LETTERS = list(ascii_lowercase)
+SPACE_CHAR = " "
 
 # Functions
 
@@ -39,15 +40,33 @@ def generate_matrix_num(rows, cols, low, high, value_type):
     -------------------------------------------------------
     """
 
+    # Initialize an empty 2D list to store the generated numbers.
+
     matrix = []
+
+    # Iterate over the rows
     for i in range(rows):
+
+        # Initialize an empty list for each row
+
         r = []
+
+        # Iterate over the columns
+
         for ii in range(cols):
+
+            # Append a random number based on the specified type, with the specified lows and highs.
+
             if (value_type == "float"):
                 r.append(uniform(low, high))
             else:
                 r.append(randint(low, high))
+
+        # Append the row to the matrix.
+
         matrix.append(r)
+
+    # Return the generated matrix.
 
     return matrix
 
@@ -66,19 +85,38 @@ def generate_matrix_char(rows, cols):
     -------------------------------------------------------
     """
 
+    # Initialize an empty list for each row
+
     matrix = []
 
+    # Iterate over the rows
+
     for i in range(rows):
+
+        # Initialize an empty list for each row
+
         r = []
+
+        # Iterate over the columns
+
         for ii in range(cols):
+
+            # Choose a random letter from the ascii lowercase module
+            # See definition on line 18.
+
             letter = LETTERS[randint(0, len(LETTERS)-1)]
+
+            # Append the letter to the row
+
             r.append(letter)
+
+        # Append the row to the matrix
+
         matrix.append(r)
 
+    # Return the generated matrix of letters
+
     return matrix
-
-
-matrix = generate_matrix_num(3, 4, -10, 10, "float")
 
 
 def print_matrix_num(matrix, value_type):
@@ -97,24 +135,37 @@ def print_matrix_num(matrix, value_type):
         None.
     -------------------------------------------------------
     """
+    # Initialize column string and row strings
+
     col_str = f' '
     row_strs = []
 
+    # Create column headings
+
     for i in range(len(matrix[0])):
         col_str += f'{i:7d}'
+
+    # Create row headings and matrix values
 
     for i in range(len(matrix)):
         row = matrix[i]
         row_str = f"{i}"
         for ii in range(len(row)):
             col = matrix[i][ii]
+
+            # Format values based on the specified type
+
             if (value_type == "int"):
                 row_str += f'{col:7d}'
             else:
                 row_str += f'{col:7.2f}'
         row_strs.append(row_str)
 
+    # Print column header
+
     print(col_str)
+
+    # Print row headings and matrix values
 
     for s in row_strs:
         print(s)
@@ -136,21 +187,38 @@ def print_matrix_char(matrix):
     -------------------------------------------------------
     """
 
-    col_str = f''
+    # Initialize column string and row strings
+
+    col_str = ''
     row_strs = []
 
+    # Create column headings with specified spacing
+
     for i in range(len(matrix[0])):
-        col_str += f'{i:1d}'
+        col_str += f'{SPACE_CHAR * 3}{i}'
+
+    # Create row headings and matrix values with specified spacing
 
     for i in range(len(matrix)):
         row = matrix[i]
         row_str = f"{i}"
         for ii in range(len(row)):
-            col = matrix[i][ii]
-            row_str += f'{col:1s}'
+            col = row[ii]
+
+            # Adjust spacing for the first column
+
+            if (ii == 0):
+                row_str += f'{SPACE_CHAR * 2}{col}'
+            else:
+                row_str += f'{SPACE_CHAR * 3}{col}'
+
         row_strs.append(row_str)
 
+    # Print column headings
+
     print(col_str)
+
+    # Print row headings and matrix values
 
     for s in row_strs:
         print(s)
@@ -170,13 +238,32 @@ def words_to_matrix(word_list):
             the matrix (list of string)
     Returns:
         matrix - a 2D list of characters of the given words
-         in word_list (2D list of string).
+        in word_list (2D list of string).
     -------------------------------------------------------
     """
-    word_length = len(word_list[0])
 
-    # Create the matrix
-    matrix = [[word[i] for i in range(word_length)] for word in word_list]
+    # Initialize an empty 2D list to store the character value.
+
+    matrix = []
+
+    # Iterate through each word in the word_list
+
+    for word in word_list:
+
+        # Initialize an empty list for each word
+
+        word_list = []
+
+        # Iterate through each letter, appending it to the word list
+
+        for letter in word:
+            word_list.append(letter)
+
+        # Append the list of characters to the matrix
+
+        matrix.append(word_list)
+
+    # Return the generated matrix.
 
     return matrix
 
@@ -196,24 +283,49 @@ def matrix_stats(matrix):
         average - the average of numbers in matrix (float/int)
     -------------------------------------------------------
     """
-    smallest = float('inf')
-    largest = float('-inf')
+
+    # Initialize variables to store results
+
+    smallest = float("infinity")
+    largest = float("-infinity")
     total = 0
+    nums = 0
+    average = 0
 
-    # Calculate statistics
-    num_elements = 0
+    # Iterate through each element in the matrix
+
     for row in matrix:
-        for num in row:
-            if isinstance(num, (int, float)):
-                smallest = min(smallest, num)
-                largest = max(largest, num)
-                total += num
-                num_elements += 1
+        for col in row:
 
-    # Calculate average
-    average = total / num_elements
+            # Convert the element into a float for comparison
 
-    return smallest, largest, total, average
+            current_value = float(col)
+
+            # Set current value to largest if it is greater
+
+            if (current_value > largest):
+                largest = current_value
+
+            # Set current value to smallest if it is smaller
+
+            if (current_value < smallest):
+                smallest = current_value
+
+            # Add the current value to the total regardless
+
+            total += current_value
+
+            # Add 1 to the total for average calculation
+
+            nums += 1
+
+    # Calculate the average
+
+    average = total / nums
+
+    # Return the results as a tuple
+
+    return (smallest, largest, total, average)
 
 
 def find_position(matrix):
@@ -230,22 +342,40 @@ def find_position(matrix):
         l_loc - a list of the row and column location of
             the largest value in matrix (list of int)
     """
-    smallest = float('inf')
-    largest = float('-inf')
-    s_loc = None
-    l_loc = None
 
-    # Iterate through the matrix to find the positions
-    for row_index, row in enumerate(matrix):
-        for col_index, value in enumerate(row):
-            if value < smallest:
-                smallest = value
-                s_loc = [row_index, col_index]
-            if value > largest:
-                largest = value
-                l_loc = [row_index, col_index]
+    # Initialize variables to store smallest and largest values
 
-    return s_loc, l_loc
+    smallest = float('infinity')
+    largest = float('-infinity')
+
+    # Initialize variables to store locations of smallest and largest values
+
+    s_loc = []
+    l_loc = []
+
+    # Iterate through each element in the matrix
+
+    for i in range(len(matrix)):
+        row = matrix[i]
+        for ii in range(len(row)):
+            col = row[ii]
+            current_value = float(col)
+
+            # Update the smallest value and its location
+
+            if (current_value < smallest):
+                smallest = current_value
+                s_loc = [i, ii]
+
+            # Update the largest value and its location
+
+            if (current_value > largest):
+                largest = current_value
+                l_loc = [i, ii]
+
+    # Return the two lits containing the locations of the smallest and largest values.
+
+    return (s_loc, l_loc)
 
 
 def find_less(matrix, n):
@@ -265,14 +395,32 @@ def find_less(matrix, n):
             an empty list otherwise (list of int)
     -------------------------------------------------------
     """
+
+    # Initialize a list to store the location of the first value smaller than n
+
     loc = []
-    for row_index, row in enumerate(matrix):
-        for col_index, value in enumerate(row):
-            if value < n:
-                loc = [row_index, col_index]
+
+    # Iterate through each element in the matrix.
+
+    for i in range(len(matrix)):
+        row = matrix[i]
+
+        # If the location is already found, exit the outer loop.
+
+        if (len(loc) > 0):
+            break
+
+        for ii in range(len(row)):
+            col = row[ii]
+
+            # If the current value is smaller than n, update the location and exit the inner loop.
+
+            if (float(col) < n):
+                loc = [i, ii]
                 break
 
-    # If no such value is found, return an empty list
+    # Return the list containing the location or an empty list if no such value is found
+
     return loc
 
 
@@ -290,11 +438,22 @@ def count_frequency(matrix, char):
         count - the number of appearances of char in the matrix (int)
     -------------------------------------------------------
     """
+
+    # Initialize a variable to store the count of the given character
+
     count = 0
 
-    # Iterate through the matrix to count the appearances of char
+    # Iterate through each element in the matrix
+
     for row in matrix:
-        count += row.count(char)
+        for col in row:
+
+            # If the current element matches the given character, increase the count
+
+            if (col == char):
+                count += 1
+
+    # Return the count of appearances of the given character in the matrix.
 
     return count
 
@@ -312,13 +471,23 @@ def find_word_horizontal(matrix, word):
     Returns:
         rows - a list of row indexes (list of int)
     """
+
+    # Initialize a list to store row indexes where the word is found
+
     rows = []
 
-    # Iterate through each row of the matrix
-    for row_index, row in enumerate(matrix):
-        # Convert the row to a string and check if it equals the word
-        if ''.join(row) == word:
-            rows.append(row_index)
+    # Iterate through each row is in the matrix.
+
+    for i in range(len(matrix)):
+        row = matrix[i]
+
+        # Convert the row to a string and check if it equals the target word
+
+        joined_word = "".join(row)
+        if (joined_word == word):
+            rows.append(i)
+
+    # Return the list of row indexes where the word is found.
 
     return rows
 
@@ -336,21 +505,42 @@ def find_word_vertical(matrix, word):
     Returns:
         cols - a list of column indexes (list of int)
     """
-    # Number of columns in the matrix
-    num_columns = len(matrix[0])
 
-    # List to store column indexes
+    # Initialize a list to store column indexes where the word is found
+
     cols = []
 
-    # Iterate through each column of the matrix
-    for col_index in range(num_columns):
-        # Extract the characters from the column
-        column_chars = [matrix[row_index][col_index]
-                        for row_index in range(len(matrix))]
+    # Initialize a list to store vertical words
 
-        # Convert the column to a string and check if it equals the word
-        if ''.join(column_chars) == word:
-            cols.append(col_index)
+    words = []
+
+    # Iterate through each row in the matrix
+
+    for i in range(len(matrix)):
+        row = matrix[i]
+        for ii in range(len(row)):
+            col = row[ii]
+
+            # Initialize an empty string for each column if words list is not ready
+
+            if (len(words) != len(row)):
+                for _ in range(len(row)):
+                    words.append("")
+
+            # If the words list is ready, append the current character to the corresponding vertical word.
+
+            if (len(words) == len(row)):
+                words[ii] += col
+
+    # Iterate through the vertical words and check if they equal the target word
+
+    for i in range(len(words)):
+        new_word = words[i]
+
+        if (new_word == word):
+            cols.append(i)
+
+    # Return the list of column indexes where the word is found.
 
     return cols
 
@@ -368,15 +558,27 @@ def find_word_diagonal(matrix, word):
         found - True if word is on the diagonal of matrix,
             False otherwise (boolean)
     """
+
+    # Initialize a variable to store whether the word is found on the diagonal.
+
     found = True
+
     # Length of the matrix
+
     matrix_length = len(matrix)
 
     # Iterate through the main diagonal of the matrix
+
     for i in range(matrix_length):
+
         # Check if the diagonal contains the given word
-        if matrix[i][i] != word[i]:
+        # This works because as the row goes down, it goes across.
+        # It starts at 0,0 and  moves to 1,1 and so on.
+
+        if (matrix[i][i] != word[i]):
             found = False
+
+    # Return whether the word is found on the diagonal.
 
     return found
 
@@ -392,12 +594,18 @@ def matrix_scalar_multiply(matrix, num):
     Returns:
         None
     """
-    # Iterate through each row of the matrix
+
+    # Iterate through each element in the matrix.
+
     for i in range(len(matrix)):
-        # Iterate through each column of the matrix
-        for j in range(len(matrix[i])):
-            # Multiply each element by the scalar
-            matrix[i][j] *= num
+        row = matrix[i]
+        for ii in range(len(row)):
+
+            # Multiply each element by the given number.
+
+            row[ii] *= num
+
+    # The function modifies the matrix in place, so it returns None.
 
     return
 
@@ -412,17 +620,27 @@ def matrix_transpose(matrix):
     Returns:
         transposed - the transposed matrix (2D list of *)
     """
-    # Determine the number of rows and columns in the matrix
-    num_rows = len(matrix)
-    num_columns = len(matrix[0])
 
-    # Create an empty transposed matrix with swapped dimensions
-    transposed = [[0 for _ in range(num_rows)] for _ in range(num_columns)]
+    # Initialize a list to store the transposed matrix
 
-    # Iterate through each element of the original matrix and transpose
-    for i in range(num_rows):
-        for j in range(num_columns):
-            transposed[j][i] = matrix[i][j]
+    transposed = []
+
+    # Iterate through each column in the original matrix.
+
+    for i in range(len(matrix[0])):
+        transposed.append([])
+
+    # Iterate through each element in the original matrix.
+
+    for i in range(len(matrix)):
+        row = matrix[i]
+        for ii in range(len(row)):
+
+            # Append the element to the corresponding column in the transposed list.
+
+            transposed[ii].append(row[ii])
+
+    # Return the transposed matrix.
 
     return transposed
 
@@ -442,15 +660,28 @@ def matrix_equal(matrix1, matrix2):
             False otherwise (boolean)
     ------------------------------------------------------
     """
+
+    # Initializes a variable to store whether the matrices are equal
+
     equal = True
+
     for i in range(len(matrix1)):
+
+        # Check if the matrices have the same dimensions
+
         if len(matrix1) != len(matrix2) or len(matrix1[0]) != len(matrix2[0]):
             equal = False
             break
+
+        # Iterate through each element in the matrices
+
         for j in range(len(matrix1[0])):
+
             # Compare corresponding elements
+
             if matrix1[i][j] != matrix2[i][j]:
                 equal = False
 
-    # If all elements are equal, matrices are equal
+    # Return whether the matrices are equal
+
     return equal
