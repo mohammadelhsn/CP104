@@ -243,43 +243,40 @@ def has_word_chain(words):
     Use: word_chain = has_word_chain(words)
     -------------------------------------------------------
     Parameters:
-        words - a of strings (list of str, len > 1)
+        words - a list of strings (list of str, len > 1)
     Returns:
         word_chain - True if words is a word chain,
             False otherwise (boolean)
     -------------------------------------------------------
     """
     # Initialize the variable to store the last character of the previous word.
-
     last_char = ""
 
     # Assume the word chain is valid initially.
-
     word_chain = True
 
-    # Iterate through each word in the list.
+    # Initialize an index variable.
+    index = 0
 
-    for word in words:
+    # Iterate through each word using a while loop.
+    while index < len(words):
+        word = words[index]
 
         # For the first word, set the last character and continue.
-
-        if (word == words[0]):
+        if index == 0:
             last_char = word[-1]
+            index += 1
             continue
         else:
-
             # Check if the first character of the current word matches the last character of the previous word.
-
-            if (word[0] == last_char):
+            if word[0] == last_char:
                 last_char = word[-1]
+                index += 1
                 continue
-
             # If the condition is not met, the word chain is False.
-
             else:
                 word_chain = False
                 break
 
     # Return validity.
-
     return word_chain
