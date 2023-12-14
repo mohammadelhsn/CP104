@@ -146,6 +146,6 @@ def verify_sorted(numbers: list):
     for i in range(len(numbers) - 1):
         if (numbers[i] > numbers[i + 1]):
             in_order = False
-            index = i
+            index = i + 1
 
     return in_order, index

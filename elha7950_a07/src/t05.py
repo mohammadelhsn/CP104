@@ -17,8 +17,8 @@ from functions import verify_sorted
 
 # Call the function
 
-result = verify_sorted([23, 41, 99])
+result = verify_sorted([23, 12, 7])
 
-# Output results 
+# Output results
 
 print(result)

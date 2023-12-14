@@ -15,6 +15,8 @@ from t04_functions import get_it
 
 # your code here
 
+test_value = input("")
+
 # Yes response
 
 response_yes = get_it('Y')

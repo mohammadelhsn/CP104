@@ -5,12 +5,15 @@ Midterm B Task 3 Function Definitions
 Author: Mohammad El-Hassan
 ID:     169067950
 Email:  elha7950@mylaurier.ca
-__updated__ = "2023-10-29"
+__updated__ = "2023-12-13"
 -------------------------------------------------------
 """
 # Constants
 
 # your constants here
+
+BASE_COST = 125
+COST_PER_EXTRA = 25
 
 
 def servicing():
@@ -32,9 +35,6 @@ def servicing():
     -------------------------------------------------------
     """
     services = int(input("How many extra services are you purchasing? "))
-
-    BASE_COST = 125
-    COST_PER_EXTRA = 25
 
     cost = (BASE_COST + (COST_PER_EXTRA * services))
 

@@ -20,6 +20,8 @@ from functions import customer_record
 
 fh = open(r"C:\Users\Techm\eclipse\ws\cp104\elha7950_l10\src\customer.txt", "r")
 
+# Get the user input
+
 print("Find record n")
 row_num = int(input("Enter a record number: "))
 

@@ -1,6 +1,9 @@
 """
 -------------------------------------------------------
 Lab 4, Functions Module
+
+Description:   
+    Tasks 1-15
 -------------------------------------------------------
 Author:  Mohammad El-Hassan
 ID:      169067950
@@ -29,6 +32,8 @@ FREEZE_DIFFERENCE = 32
 SECONDS_IN_A_DAY = 86400
 SECONDS_IN_AN_HOUR = 3600
 SECONDS_IN_A_MIN = 60
+
+# Functions
 
 
 def diameter(radius):
@@ -65,7 +70,7 @@ def circumference(radius):
         circ - circumference of a circle (float)
     ------------------------------------------------------
     """
-    # 2pir
+    # 2 * pi * r
 
     circ = pi * radius * 2
 

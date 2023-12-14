@@ -62,7 +62,7 @@ def read_integers(file_handle):
 
     for line in lines:
         for el in line.split(','):
-            if (el.isdigit()):
+            if (el.strip().isdigit()):
                 number_list.append(int(el))
     return number_list
 

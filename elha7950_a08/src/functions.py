@@ -53,8 +53,11 @@ def add_spaces(sentence):
 
         # If it's the last one, add the word to the list of words.
 
-        if (i == len(sentence)-1):
-            word += sentence[i]
+        if (i == (len(sentence)-1)):
+            if (sentence[i-1].isupper()):
+                words.append(word)
+                word = ""
+            word += sentence[i].lower()
             words.append(word)
 
         # If the letter is uppercase, it means it's a new word.
